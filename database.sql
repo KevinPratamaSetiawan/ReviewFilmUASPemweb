@@ -53,6 +53,3 @@ CREATE TABLE user_data(
     PRIMARY KEY(user_id),
     CONSTRAINT fk2_film_id FOREIGN KEY (fk2_film_id) REFERENCES film(film_id) ON DELETE CASCADE
 );
-
-INSERT INTO film(title,synopsis,genre_id,score,release_year,release_month)
-VALUES ("Judul 1", "Sinopsis disini", "01","10/10","2023","January");

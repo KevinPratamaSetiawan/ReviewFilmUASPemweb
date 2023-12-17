@@ -118,8 +118,8 @@ $genre_result = $conn->query($genre_query);
                 ?>
 
                 <tr>
-                    <td>
-                        <div class="film">
+                    <td class="film">
+                        <div>
                             <div class="title-score-part">
                                 <p><?php echo $rows['title'];?></p>
                                 <p><?php echo $rows['score'];?>/100</p>
@@ -149,12 +149,12 @@ $genre_result = $conn->query($genre_query);
                                 </div>
                             </div>
                         </div>
+                        <div id="detail-btn-container">
                         <form action="detail-page.php" method="post">
                             <input name="film_id" type="hidden" value="<?php echo $rows['film_id'];?>">
-                            <?php echo $rows['film_id'];?>
                             <button type="submit">Details</button>
                         </form>
-                        
+                        </div>
                     </td>
                 </tr>
 
